@@ -19,7 +19,7 @@ export default function movieTypes({type}) {
       production: "Marodi Tv",
       date: "Sep 30th 2023",
       fee: "500",
-      image: require("../../assets/images/movie1.jpg"),
+      image: require("../../assets/images/movie2.jpg"),
     },
     {
       id: "3",
@@ -27,11 +27,11 @@ export default function movieTypes({type}) {
       production: "Marodi Tv",
       date: "Sep 30th 2023",
       fee: "500",
-      image: require("../../assets/images/movie1.jpg"),
+      image: require("../../assets/images/movie3.jpg"),
     },
   ];
   return (
-    <SafeAreaView className=" w-full h-72 flex justify-center  py-2">
+    <SafeAreaView className=" w-full h-auto flex justify-center py-2">
       <Text className="font-bold text-xl text-blue-800 mb-4">{type}</Text>
       <FlatList
       className=""
