@@ -1,9 +1,9 @@
 import React from "react";
 import { View, Text, Image} from "react-native";
-import movie from '../../assets/images/movie1.jpg';
-
+import {Link} from "expo-router";
 export default function movieCart({name, production, date, fee, image}) {
   return (
+    <Link href="/MovieDetails">
     <View className="flex px-2 mr-4 flex-col w-72 h-80 items-center rounded-lg  ">
        <Image   source={image}  className=" w-full h-2/4 mb-1 rounded "/>
        <View className="flex flex-col justify-center h-auto w-full items-left">
@@ -14,5 +14,6 @@ export default function movieCart({name, production, date, fee, image}) {
           
        </View>
     </View>
+    </Link>
   );
 }
